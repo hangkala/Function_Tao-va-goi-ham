@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo và gọi hàm</title>
+</head>
+<body>
+<p>Sử dụng hàm confirm để nhận thông tin đầu vào và đưa ra quyết định dựa trên những thông tin đó</p>
+<script>
+    function processCf(answer) {
+        let result = 0;
+        if (answer) result = ('OK, let play a game');
+        else result = ('Maybe later');
+        return result;
+    }
+
+    let ask = confirm('Shall we play a game?');
+    let ans = processCf(ask);
+    alert(ans);
+</script>
+</body>
+</html>
